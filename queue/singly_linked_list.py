@@ -17,6 +17,10 @@ class LinkedList:
     def __init__(self):
         self.head = None
         self.tail = None
+        self.length = 1 if Node is not None else 0
+
+    def __len__(self):
+        return self.length
 
     def add_to_tail(self, value):
         
